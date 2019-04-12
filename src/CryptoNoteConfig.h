@@ -41,7 +41,7 @@ const unsigned EMISSION_SPEED_FACTOR                         = 27;
 
 // mandatory mixin V4
 const uint8_t MANDATORY_MIXIN_BLOCK_VERSION                  = 4;
-const size_t MIN_MIXIN                                       = 4;
+const size_t MIN_MIXIN                                       = 1;
 const size_t MAX_MIXIN                                       = 101;
 
 
@@ -106,7 +106,7 @@ const uint64_t TESTNET_DIFFICULTY_TARGET                             = 15; // ta
 } // parameters
 
 const char     CRYPTONOTE_NAME[]                             = "Laniakey";
-const char     GENESIS_COINBASE_TX_HEX[]                     = "013c01ff0001ffffffffffff03029b2e4c0281c1b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd08807121017767aafcde9be00dcfd098715ebcf7f410daebc582fda69d24a28e9d0bc780d3";
+const char     GENESIS_COINBASE_TX_HEX[]                     = "013c01ff0001ffffffffffff03029b2e4c0281c1b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd08807121017767aafcde9be00dcfd098715ebcf7f410daebc582fda69d24a28e9d0bc780d6";
 
 const uint8_t  TRANSACTION_VERSION_1                         =  1;
 const uint8_t  TRANSACTION_VERSION_2                         =  2;
@@ -152,14 +152,14 @@ struct CheckpointData {
     const char* blockId;
 };
 
-const std::initializer_list<CheckpointData> CHECKPOINTS = {
-    {200000, "23f18774eee12a43c80d7162fba4d5fb10290128f31890a7cd0ff6c4e2948277"},
-    {400000, "a1d34d9e229c6e425f7a9d5dfa1fa35525e3f387ed664a04c6ef5cc609357057"},
-    {600000, "2a9461eb7ae8a934a111b2e9f570e81efaf02c5382a9c707cadce88e768a9205"},
-    {800000, "a1ed05e9671acce3cfa7dd283f0be5320b8d626fe84be4703fc8d3be95ffcc59"},
-    {1000000, "d410152f30e4c21e0bc1d82ee80f757fd2223e8a1636774b8759101f4f21dd91"},
-    {1500000, "23e3e5273df28de9036b7336894578873257e1b1a2d2d14ab9945b7333ce8707"},
-    {2000000, "2d5892e15d7b2066d0b26aa150c4419676dbf7678d220b2d111c74c54c0fe6ad"}
+//const std::initializer_list<CheckpointData> CHECKPOINTS = {
+  //  {200000, "23f18774eee12a43c80d7162fba4d5fb10290128f31890a7cd0ff6c4e2948277"},
+    //{400000, "a1d34d9e229c6e425f7a9d5dfa1fa35525e3f387ed664a04c6ef5cc609357057"},
+    //{600000, "2a9461eb7ae8a934a111b2e9f570e81efaf02c5382a9c707cadce88e768a9205"},
+    //{800000, "a1ed05e9671acce3cfa7dd283f0be5320b8d626fe84be4703fc8d3be95ffcc59"},
+    //{1000000, "d410152f30e4c21e0bc1d82ee80f757fd2223e8a1636774b8759101f4f21dd91"},
+    //{1500000, "23e3e5273df28de9036b7336894578873257e1b1a2d2d14ab9945b7333ce8707"},
+    //{2000000, "2d5892e15d7b2066d0b26aa150c4419676dbf7678d220b2d111c74c54c0fe6ad"}
 };
 
 } // CryptoNote
