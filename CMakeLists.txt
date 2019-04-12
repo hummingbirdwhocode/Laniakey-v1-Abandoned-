@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.8.6)
 
 #Set build version
-set(VERSION_MAJOR "0")
+set(VERSION_MAJOR "1")
 set(VERSION_MINOR "0.5 ${CMAKE_BUILD_TYPE}")
 
 set_property(GLOBAL PROPERTY USE_FOLDERS ON)
